@@ -1,0 +1,9 @@
+2019/07/03-10:02:04.031 7853 Reusing MANIFEST /home/sam/snap/postman/81/.config/Postman/IndexedDB/file__0.indexeddb.leveldb/MANIFEST-000001
+2019/07/03-10:05:25.440 7853 Current memtable full; waiting...
+2019/07/03-10:05:25.440 9466 Level-0 table #5: started
+2019/07/03-10:05:25.442 9466 Level-0 table #5: 8453 bytes OK
+2019/07/03-10:05:25.443 9466 Delete type=0 #3
+2019/07/03-10:05:25.443 9466 Level-0 table #7: started
+2019/07/03-10:05:25.443 9466 Level-0 table #7: 0 bytes OK
+2019/07/03-10:05:25.445 9466 Delete type=0 #4
+2019/07/03-10:05:25.445 9466 Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

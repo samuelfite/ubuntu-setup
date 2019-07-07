@@ -1,0 +1,6 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"type":"requester","id":"917510ff-0b15-407b-95fd-615b26aaad11","browserWindowId":4,"activeSession":"","position":{},"size":{"width":1280,"height":800},"visibility":{"maximized":false,"isFullScreen":false},"_id":"917510ff-0b15-407b-95fd-615b26aaad11"}
+{"$$deleted":true,"_id":"917510ff-0b15-407b-95fd-615b26aaad11"}
+{"type":"requester","id":"917510ff-0b15-407b-95fd-615b26aaad11","browserWindowId":4,"activeSession":"40533aa3-7a43-4890-b5cb-7a849d621dc7","position":{},"size":{"width":1280,"height":800},"visibility":{"maximized":false,"isFullScreen":false},"_id":"917510ff-0b15-407b-95fd-615b26aaad11"}
+{"$$deleted":true,"_id":"917510ff-0b15-407b-95fd-615b26aaad11"}
+{"type":"requester","id":"917510ff-0b15-407b-95fd-615b26aaad11","browserWindowId":4,"activeSession":"40533aa3-7a43-4890-b5cb-7a849d621dc7","position":{"x":3522,"y":27},"size":{"width":956,"height":1051},"visibility":{"maximized":false,"isFullScreen":false},"_id":"917510ff-0b15-407b-95fd-615b26aaad11"}

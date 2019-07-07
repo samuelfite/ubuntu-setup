@@ -1,0 +1,3 @@
+#save all videos here
+-o ~/Videos/youtube/%(title)s.%(ext)s
+#use -x to save as audio only

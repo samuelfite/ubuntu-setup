@@ -1,0 +1,50 @@
+du
+!du -sh
+dc
+source 
+shell du -sh
+mkdir configs
+mkdir i3
+search *.html
+find /home/sam/ *.html
+q
+wq
+search l
+search grep
+open_with
+shell  mkdir i3status
+shell  touch
+shell  touch config
+shell  cp -r /media/sam/p/Card/Videoz/Team America - World Police 2004 (1080p x265 10bit Tigole).mkv /home/sam/Videos
+shell  cp -r /media/sam/p/Card/Videoz/The Shape of Water 2017 (1080p x265 10bit Tigole).mkv /home/sam/Videos
+shell  cp -r /media/sam/p/Card/Videoz/Team America - World Police 2004 (1080p x265 10bit Tigole).mkv
+find ra
+find ran
+find ranger
+shell  touch sxhkdrc
+find syst
+find dist
+shell  %s
+shell  w3m -dump \How to decommission_retire a Datto Storage Node - Infrastructure Engineering - Datto homePool.html | less
+shell  w3m -dump "How to decommission_retire a Datto Storage Node - Infrastructure Engineering - Datto homePool.html" | less
+shell  w3m -dump \"How to decommission_retire a Datto Storage Node - Infrastructure Engineering - Datto homePool.html\" | less
+shell  w3m -dump \"How to decommission_retire a Datto Storage Node - Infrastructure Engineering - Datqqto homePool.html\" | less
+rename decomm_guides
+open_with k
+find mp
+open_with is
+find mpris
+find mprishh
+search mpris
+find mpr
+open_with 
+
+shell  mkdir decoms
+shell  mkdir youtube
+S
+rename bad_input.txt
+rename aggregate_hosts.txt
+find Postm
+open_with vim
+search Postman
+delete
