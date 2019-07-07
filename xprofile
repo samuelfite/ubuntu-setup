@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#AUTOSTART
+exec i3-with-shmlog
+#ENVIRONMENTAL VARIABLES
+export PATH="$PATH:$HOME/.scripts:/usr/local/lib/python3.6/distpackages:/usr/bin/pip3/:usr/bin/python3"
+export TERMINAL="xterm"
+export BROWSER="google-chrome"
+export EDITOR="vim"
+export PAGER="vim"
+export VISUAL="vim"
+export READER="zathura"
+export RANGER_LOAD_DEFAULT_RC="FALSE"
+export FQDN_OS_THIS_HOST="sam-ThinkPad-X1-Carbon-6th.datto.lan"
+#export DIP="192.168.0.6"
+
