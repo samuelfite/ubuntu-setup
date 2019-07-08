@@ -1,0 +1,26 @@
+XF86Audio{Lower,Raise}Volume
+  pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo {-,+}2%
+
+XF86AudioMute
+  pactl set-sink-volume alsa_output.pci-0000_00_1f.3.analog-stereo 0%
+
+XF86AudioPlay
+  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+XF86Audio{Next,Prev}
+  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{Next,Previous}
+
+ctrl + {Prior,Next}
+  xbacklight {-inc,-dec} 5 
+
+XF86MonBrightness{Up,Down}
+  xbacklight {-inc,-dec} 5
+
+ctrl + shift + {Prior,Next}
+  /home/sam/.scripts/brightness_control.sh {up,down} 0
+
+ctrl + KP_{Add,Subtract}
+  /home/sam/.scripts/brightness_control.sh {up,down} 1
+  
+ctrl + shift + KP_{Add,Subtract}
+  /home/sam/.scripts/brightness_control.sh {up,down} 2
