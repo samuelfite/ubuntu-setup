@@ -72,6 +72,7 @@ python3-wheel
 unclutter
 libxcb-shape0-dev
 libxcb-util0-dev
+libxcb-xrm-dev
 
 ### Git installs
 https://github.com/ranger/ranger
