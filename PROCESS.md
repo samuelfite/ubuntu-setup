@@ -41,6 +41,7 @@ suckless-tools
 pulsemixer
 dunst
 tmux
+feh
 compton
 i3status
 i3blocks
