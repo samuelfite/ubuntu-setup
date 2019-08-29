@@ -73,7 +73,8 @@ unclutter
 libxcb-shape0-dev
 libxcb-util0-dev
 libxcb-xrm-dev
-
+lightdm
+lightdm-gtk-greeter*
 ### Git installs
 https://github.com/ranger/ranger
 https://github.com/junegunn/vim-plug
