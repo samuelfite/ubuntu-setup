@@ -71,6 +71,7 @@ python3-venv
 python3-wheel
 unclutter
 libxcb-shape0-dev
+libxcb-util0-dev
 
 ### Git installs
 https://github.com/ranger/ranger
