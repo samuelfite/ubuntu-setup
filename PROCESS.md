@@ -77,6 +77,7 @@ lightdm
 lightdm-gtk-greeter*
 texmaker
 most
+neovim
 
 ### Git installs
 https://github.com/ranger/ranger
