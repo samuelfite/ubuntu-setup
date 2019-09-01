@@ -75,6 +75,9 @@ libxcb-util0-dev
 libxcb-xrm-dev
 lightdm
 lightdm-gtk-greeter*
+texmaker
+most
+
 ### Git installs
 https://github.com/ranger/ranger
 https://github.com/junegunn/vim-plug
