@@ -78,6 +78,7 @@ lightdm-gtk-greeter*
 texmaker
 most
 neovim
+python3-pip
 
 ### Git installs
 https://github.com/ranger/ranger
