@@ -30,7 +30,8 @@ sxhkd
 xcape
 zathura
 rtv
-xterm-gtk
+xterm
+w3m
 w3m-img
 curl
 gnome-system-monitor
@@ -77,7 +78,6 @@ lightdm
 lightdm-gtk-greeter*
 texmaker
 most
-neovim
 python3-pip
 
 ### Git installs
