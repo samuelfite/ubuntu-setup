@@ -87,7 +87,7 @@ https://github.com/caemoulins/pamixer
 https://github.com/Airblader/xcb-util-xrm.git
 
 ### Other Installs
-sudo -H pip install --upgrade youtube-dl
+sudo -H pip3 install --upgrade youtube-dl
 
 ### Snap installs
 alsa-utils
