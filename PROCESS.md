@@ -79,6 +79,8 @@ lightdm-gtk-greeter*
 texmaker
 most
 python3-pip
+gparted
+
 
 ### Git installs
 https://github.com/ranger/ranger
