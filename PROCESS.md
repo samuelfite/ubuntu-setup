@@ -80,6 +80,7 @@ texmaker
 most
 python3-pip
 gparted
+sumatra
 
 
 ### Git installs
