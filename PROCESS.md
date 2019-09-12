@@ -81,7 +81,7 @@ most
 python3-pip
 gparted
 sumatra
-
+arandr
 
 ### Git installs
 https://github.com/ranger/ranger
