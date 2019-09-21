@@ -84,7 +84,10 @@ sumatra
 arandr
 
 ### Git installs
+
+RANGER:
 https://github.com/ranger/ranger
+pip isntall -r requirements.txt
 https://github.com/junegunn/vim-plug
 https://github.com/caemoulins/pamixer
 https://github.com/Airblader/xcb-util-xrm.git
