@@ -77,11 +77,10 @@ libxcb-xrm-dev
 lightdm
 lightdm-gtk-greeter*
 texmaker
-most
 python3-pip
 gparted
-sumatra
 arandr
+lxappearance
 
 ### Git installs
 
