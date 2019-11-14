@@ -82,6 +82,10 @@ gparted
 arandr
 lxappearance
 
+[[thinkpad only]]-->
+acpi-call-dkms
+acpi
+
 ### Git installs
 
 RANGER:
