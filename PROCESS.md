@@ -82,6 +82,7 @@ gparted
 arandr
 lxappearance
 qt5-style-plugins
+ffmpeg
 
 [[thinkpad only]]-->
 acpi-call-dkms
