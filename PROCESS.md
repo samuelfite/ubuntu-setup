@@ -81,6 +81,7 @@ python3-pip
 gparted
 arandr
 lxappearance
+qt5-style-plugins
 
 [[thinkpad only]]-->
 acpi-call-dkms
