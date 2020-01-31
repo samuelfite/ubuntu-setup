@@ -1,0 +1,229 @@
+! font dpi
+Xft.dpi:        96
+Xft.antialias:  true
+Xft.hinting:    true
+Xft.rgba:       rgb
+Xft.autohint:   false
+Xft.hintstyle:  hinstlight 
+Xft.lcdfilter:  lcddefault
+!-------- Xterm Terminal Settings [[[
+!------------------------------------------------------
+! https://wiki.archlinux.org/index.php/Xterm
+! https://lukas.zapletalovi.com/2013/07/hidden-gems-of-xterm.html
+! http://www.futurile.net/2016/06/14/xterm-setup-and-truetype-font-configuration/
+! http://www.futurile.net/2016/06/15/xterm-256color-themes-molokai-terminal-theme/
+
+! Allow xterm to report the TERM variable correctly.
+! Do not set the TERM variable from your ~/.bashrc or ~/.bash_profile or similar file.
+! The terminal itself should report the correct TERM to the system so that the proper terminfo file will be used.
+! Two usable terminfo names are xterm and xterm-256color
+XTerm.termName: xterm-256color
+
+! Fonts ====================================================
+! set font and fontsize
+!XTerm*faceName: DejaVu Sans Mono
+XTerm*faceName: Hack:style=Regular
+!!XTerm*font:             -*-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+!!XTerm*boldFont:         -*-fixed-medium-r-*-*-13-*-*-*-*-60-iso10646-1
+!!XTerm*font:             *-fixed-*-*-*-26-*
+!!XTerm*boldFont:         *-fixed-*-*-*-26-*
+
+XTerm*faceSize: 12
+!! VT Font Menu: Unreadable
+xterm*faceSize1: 11
+!! VT font menu: Tiny
+xterm*faceSize2: 12
+!! VT font menu: Medium
+xterm*faceSize3: 13
+!! VT font menu: Large
+xterm*faceSize4: 14
+!! VT font menu: Huge
+xterm*faceSize5: 25
+
+!*VT100.colorBDMode:     true
+!*VT100.colorBD:         red
+!*VT100.colorULMode:     true
+!*VT100.colorUL:         cyan
+!*VT100.veryBoldColors: 6
+
+
+!! Line spacing
+XTerm.scaleHeight: 1.01
+
+! Ensure that your locale is set up for UTF-8. If you do not use UTF-8, you may need to force xterm to more strictly follow your locale by setting
+XTerm.vt100.locale: true
+
+
+! Cursor ====================================================
+! pointer and cursor (blinking and color)
+XTerm*pointerColor: white
+!XTerm*pointerColorBackground: black
+XTerm*cursorColor: white
+XTerm*cursorBlink: true
+
+
+!! Selecting Text ========================================================
+! Only select text
+XTerm*highlightSelection: true
+! Remove trailing spaces
+XTerm*trimSelection: true
+
+!! Scrolling ========================================================
+! Use: Shift-Pageup / Shift-Pagedown to scroll or mousewheel
+! Lines of output that you can scroll back over
+XTerm*saveLines: 99999
+
+! Turn the scrollbar on, and put it on the right
+! XTerm.vt100.scrollBar: true
+! XTerm.vt100.scrollbar.width: 8
+! xterm*scrollBar: true
+! xterm*rightScrollBar: true
+
+! Do not scroll when there is new input e.g. tail -f /var/syslog
+XTerm*scrollTtyOutput: false
+
+
+!! Keybinding ========================================================
+! http://blog.rot13.org/2010/03/change-font-size-in-xterm-using-keyboard.html
+! - change fontsize on the fly (ctrl+plus = increase ; ctrl+minus = decrease, ctrl+0 = default)
+! - copy/paste hotkey (ctrl+shift+c = copy ; ctrl+shift+v = paste)
+! - open url (clickable links)
+!   1) double click to highlight the full url
+!   2) Shift + click it to open it
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> minus: smaller-vt-font() \n\
+  Ctrl <Key> plus: larger-vt-font() \n\
+  Ctrl <Key> 0: set-vt-font(d) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  Shift <Btn1Up>: exec-formatted("xdg-open '%t'", PRIMARY) \n\
+  <Btn1Up>: select-end(PRIMARY, CLIPBOARD, CUT_BUFFER0) \n\
+  <Btn2Up>: insert-selection(PRIMARY) \n\
+  Shift <Key>Up: scroll-back(5)\n\
+  Shift <Key>Down: scroll-forw(5)\n\
+  Shift <Key>Home: scroll-back(16384)\n\
+  Shift <Key>End: scroll-forw(16384)\n\
+  Ctrl Shift <Key>y: scroll-back(1)\n\
+  Ctrl Shift <Key>e: scroll-forw(1)\n\
+  Ctrl Alt <Key>S: secure()\n\
+
+
+!  Ctrl Shift <Key>h: string(0x1b) string("[72;5u")\n\
+!  Ctrl Shift <Key>j: string(0x1b) string("[74;5u")\n\
+!  Ctrl Shift <Key>k: string(0x1b) string("[75;5u")\n\
+!  Ctrl Shift <Key>l: string(0x1b) string("[76;5u")\n\
+
+! enable copy/paste hotkey to work (shift+insert = paste ; mouse highlight = copy)
+XTerm*selectToClipboard: true
+! disable fullscreen hotkey alt+enter (hotkey conflicts with weechat, midnight commander ...etc)
+XTerm*fullscreen: never
+! enable alt key to work
+XTerm*metaSendsEscape: true
+! Fix the backspace key (for Emacs)
+XTerm.vt100.backarrowKey: false
+XTerm.ttyModes: erase ^?
+
+! double-click to select whole URLs :D
+! https://scarygliders.net/2011/12/01/customize-xterm-the-original-and-best-terminal/
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! Tips: Left and right selection (text selection using left button for beginning and right button for end)
+! Tips: Triple Click ( 1 click = nothing, 2 click = select word, 3 click = select line )
+!
+! XTerm*on3Clicks: regex [[:alpha:]]+://([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+XTerm*on3Clicks: regex ([[:alpha:]]+://)?([[:alnum:]!#+,./=?@_~-]|(%[[:xdigit:]][[:xdigit:]]))+
+!
+!-------- Xterm Terminal Settings ]]]
+
+!########################################################################
+!####################
+!###### Themes ######
+!####################
+!Normal      Bright
+!--------    -------
+!0 Black      8 Black
+!1 Red        9 Red
+!2 Yellow    10 Yellow
+!3 Green     11 Green
+!4 Blue      12 Blue
+!5 Magenta   13 Magenta
+!6 Cyan      14 Cyan
+!7 White     15 White
+
+!Skyfall{{{
+*background:  #282F37
+*foreground:  #F1FCF9
+*cursorColor: #F1FCF9
+*color0:      #20262C
+*color1:      #DB86BA
+*color2:      #74DD91
+*color3:      #E49186
+*color4:      #75DBE1
+*color5:      #B4A1DB
+*color6:      #9EE9EA
+*color7:      #F1FCF9
+*color8:      #465463
+*color9:      #D04E9D
+*color10:     #4BC66D
+*color11:     #DB695B
+*color12:     #3DBAC2
+*color13:     #825ECE
+*color14:     #62CDCD
+*color15:     #E0E5E5
+!}}}
+
+!!!Terminal.sexy{{{
+!! special
+!*.foreground:   #a6a28c
+!*.background:   #20201d
+!*.cursorColor:  #a6a28c
+!! black
+!*.color0:       #20201d
+!*.color8:       #7d7a68
+!! red
+!*.color1:       #d73737
+!*.color9:       #d73737
+!! green
+!*.color2:       #60ac39
+!*.color10:      #60ac39
+!! yellow
+!*.color3:       #cfb017
+!*.color11:      #cfb017
+!! blue
+!*.color4:      #6684e1
+!*.color12:       #5973c3
+!! magenta
+!*.color5:       #b854d4
+!*.color13:      #b854d4
+!! cyan
+!*.color6:       #1fad83
+!*.color14:      #25cf9d
+!! white
+!*.color7:       #a6a28c
+!*.color15:      #fefbec
+!!}}}
+
+
+!!Ephemeral{{{
+!*background:	#323F4E
+!*foreground:	#F8F8F2
+!*cursorColor:	#F8F8F2
+!*color0:	#3D4C5F
+!*color1:	#F48FB1
+!*color2:	#A1EFD3
+!*color3:	#F1FA8C
+!*color4:	#92B6F4
+!*color5:	#BD99FF
+!*color6:	#87DFEB
+!*color7:	#F8F8F2
+!*color8:	#56687E
+!*color9:	#EE4F84
+!*color10:	#53E2AE
+!*color11:	#F1FF52
+!*color12:	#6498EF
+!*color13:	#985EFF
+!*color14:	#24D1E7
+!*color15:	#E5E5E5
+!}}}
+
+
